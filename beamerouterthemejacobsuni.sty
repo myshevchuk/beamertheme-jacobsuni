@@ -1,0 +1,35 @@
+\mode<presentation>
+
+% Frame title
+\defbeamertemplate*{frametitle}{jacobsuni theme}[1][]
+{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.9cm]{frametitle}
+  \begin{tikzpicture}
+  \useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,1.9);
+  \fill[jublue] (0,1.3) rectangle(2.09,1.445);
+  {\node[anchor=north,jublue,font=\large,text width=0.7\paperwidth] at (6.275,1.2){\MakeUppercase\insertframetitle};}
+  {\node[anchor=east] at (\paperwidth-0.5cm,1.09cm){\includegraphics[width=2.43cm]{ju_logo.pdf}};}
+  \end{tikzpicture}
+  \end{beamercolorbox}
+}
+
+\defbeamertemplate*{footline}{jacobsuni theme}
+{
+  \leavevmode%
+  \hspace*{0.65cm}
+  \hbox{%
+    \begin{beamercolorbox}[wd=0.1\paperwidth,ht=4ex,dp=2ex,left]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertshortdate
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=0.715\paperwidth,ht=4ex,dp=2ex,left]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=0.1\paperwidth,ht=4ex,dp=2ex,right]{page in head/foot}%
+      \usebeamerfont{date in head/foot}Page \insertframenumber{}
+    \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\setbeamersize{text margin left=0.675cm, text margin right=0.675cm}
+
+\mode<all>

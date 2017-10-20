@@ -1,0 +1,130 @@
+# Project specific ignores #
+############################
+
+# do not include the title picture (to be on the safe side with copyright issues)
+
+title_pic.png
+title_pic.jpg
+
+# directories
+
+
+# Common ignores #
+#####################
+
+# Emacs temp files #
+####################
+
+*\~
+.*\~
+\#*\#
+\#*
+.\#*\#
+.\#*
+
+# common auxilary files #
+######################
+*.lock
+*.errors
+history
+*.bib.sav
+auto
+# latex auxilary files  #
+#########################
+
+*.bak
+*.cmpd
+
+# I use org
+*.tex
+
+# latex auxilary files files (from TeX.gitignore, https://github.com/github/gitignore/blob/master/TeX.gitignore) #
+##################################################################################################################
+
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+
+## Intermediate documents:
+#*.dvi
+# these rules might exclude image files for figures etc.
+# *.ps
+*.eps
+# Jacobs logo is in pdf
+#*.pdf
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## Auxiliary and intermediate files from other packages:
+
+# algorithms
+*.alg
+*.loa
+
+# amsthm
+*.thm
+
+# beamer
+*.nav
+*.snm
+*.vrb
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+
+# hyperref
+*.brf
+
+# listings
+*.lol
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# minitoc
+*.maf
+*.mtc
+*.mtc0
+
+# minted
+*.pyg
+
+# nomencl
+*.nlo
+
+# partial table of contents
+*.ptc
+
+# todonotes
+*.tdo
+
+# xindy
+*.xdy
+
+# pdfpc viewer
+*.pdfpc

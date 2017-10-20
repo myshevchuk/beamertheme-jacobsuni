@@ -1,0 +1,25 @@
+#+TITLE: Jacobs University Bremen unofficial Beamer theme
+#+AUTHOR: Mykhailo Shevchuk
+
+* Description
+
+  This is Beamer theme is meant to be visually similar to the official Jacobs
+  University Bremen presentation template.
+
+* Installation
+* Usage
+* Changes
+*** Version 0.1
+
+    - A fairly working version for casual use.
+
+* License
+
+  Copyright (C) 2017, Mykhailo Shevchuk. All rights reserved.
+
+  This work is licensed under MIT license.
+
+  Jacobs University logo included is not covered by this license. The images are
+  slightly enhanced versions of a public domain [[https://commons.wikimedia.org/wiki/File:Jacobs_University_Bremen_logo.svg][file]]. The logo and the theme
+  themselves or some parts thereof may be protected as trademarks, thus
+  trademark and other laws may apply.

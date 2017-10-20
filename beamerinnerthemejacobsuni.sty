@@ -1,0 +1,55 @@
+\mode<presentation>
+
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  {\node[anchor=east] at (\paperwidth-0.55cm,8.22cm){\includegraphics[width=2.9cm]{ju_logo.pdf}};}
+  {\node[anchor=north] at (8,7.55cm){\inserttitlegraphic};}
+  \fill[jublue,opacity=0.9] (0,0) rectangle(7.8cm,3.7cm);
+  \ifnum\thepage>1\relax%
+  \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fi
+  \end{tikzpicture}
+}
+
+% Title page
+\defbeamertemplate*{title page}{jacobsuni}[1][]
+{
+  \vskip5.5cm%
+  \begin{beamercolorbox}[wd=6.45cm,#1]{title page header}
+    \usebeamerfont{title}\MakeUppercase\inserttitle\par%
+  \end{beamercolorbox}%
+  \vskip0.3cm%
+  \begin{beamercolorbox}[wd=6.45cm,#1]{author}
+    \usebeamerfont{author}\insertauthor%
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[wd=6.45cm,#1]{date}
+    \usebeamerfont{institute}\insertinstitute, \usebeamerfont{author}\insertdate%
+  \end{beamercolorbox}
+  \vfill
+}
+
+% TOC
+% https://tex.stackexchange.com/questions/170268/separation-space-between-tableofcontents-items-in-beamer
+\patchcmd{\beamer@sectionintoc}
+  {\vfill}
+  {\vskip\itemsep}
+  {}
+  {}
+
+  \setbeamertemplate{section in toc}[sections numbered]{}
+
+\defbeamertemplate*{section page}{jacobsuni}[1][]
+{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=\paperheight]{section page}
+  \begin{tikzpicture}
+    \useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,\the\paperwidth);
+    {\node[anchor=east] at (\paperwidth-0.55cm,8.22cm){\includegraphics[width=2.9cm]{ju_logo.pdf}};}
+    \fill[jublue] (0,6.52) rectangle(2.09,6.665);
+    {\node[anchor=north,jublue,font=\large,text width=0.7\paperwidth] at (6.275,6.42){\usebeamerfont{section name}\sectionname~\insertsectionnumber};}
+    {\node[anchor=north,jublue,font=\large,text width=0.7\paperwidth] at (6.275,5.95){\usebeamerfont{section title}\MakeUppercase\insertsection};}
+  \end{tikzpicture}
+  \end{beamercolorbox}
+}
+
+\mode<all>
